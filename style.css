@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Lobster&family=Lora:wght@500&family=Playfair+Display&family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html,body{
+    scroll-behavior:smooth;
+    scroll-padding: 0.5rem;
+    font-family: 'Instrument Serif', serif;
+    /* font-family: 'Lobster', sans-serif; */
+    overflow-x: hidden;
+}
+
+nav{
+    background-color: rgb(0, 0, 0);
+
+}
+.navbar-brand h2{
+    color:#68d80d;
+    font-size: 28px;
+    padding: 3.5%;
+}
+.navbar-brand span{
+    color: #fff;
+    font-size: 20px;
+}
+
+.nav-item .nav-link{
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    list-style: none;
+}
+
+.nav-item .nav-link:hover{
+    color: #68d80d;
+    border-bottom: 2px solid #68d80d;
+}
+/* .active{
+    color: #68d80d;
+    border-bottom: 2px solid #68d80d;
+} */
+
+/* ------------------------------ Main Section ----------------------------------- */
+.main{
+    background-image: url("img1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 150vh;
+    /* height:calc(100% - 100px); */
+    clip-path: polygon(100% 0, 100% 87%, 52% 100%, 0 85%, 0 0);
+}
+.main h2{
+    font-size: 5rem;
+    font-weight: 800;
+    color: #bababb;
+    
+}
+.main h2 span{
+    color: #68d80d;
+}
+.main h4 span{
+    font-size:17px;
+    color:#bababb;
+    font-weight: 600;
+}
+.main h4{
+    font-size: 25px;
+    color:#68d80d;
+    font-weight: 600;
+}
+main h4 h2{
+    margin-left: 20rem;
+}
+
+.btn1{
+    height:50px;
+    width: 120px;
+    color: white;
+    font-size:20px;
+    font-weight: 600;
+    border: 2px solid #68d80d;
+    background-color: #68d80d;
+    border-radius: 5%;
+    
+}
+.btn1 :hover{
+    opacity: 0.5;
+}
+/* -------------------------- Feature section -------------------------- */
+
+.more h2{
+    font-weight: 800;
+}
+.more span{
+    color: #68d80d;
+}
+.more p{
+    font-weight: lighter;
+}
+p{
+    font-size: 20px;
+}
+
+/* ------------------------------ Discover -------------------------------------- */
+
+.discover{
+    background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(rockimg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 90vh;
+}
+.discover h1{
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+.discover p{
+    font-weight: 500;
+}
+.discover span{
+    color: #68d80d;
+}
+.btn1{
+    border-radius: 15px;
+}
+
+/* --------------------------------- Services ------------------------------------- */
+.services .card{
+    box-shadow: 2px 5px 10px #9e9ea5;
+    gap: 10px;
+}
+.services h1{
+    font-weight: 800;
+    font-size: 2.5 rem;
+    
+}
+.services h5{
+    font-weight: 700;
+}
+.fas{
+    font-size: 2.5rem;
+}
+
+/* ============================= Courses ============================= */
+.courses h1{
+    font-weight: 800;
+    font-size: 2.8rem;
+}
+.courses .card{
+    box-shadow: 4px 4px 4px #949495;
+    gap: 10px;
+    
+}
+.card img{
+    position: relative;
+    max-width: 100%;
+    transition: all 0.6s;
+}
+.card:hover img{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+p{
+    font-weight: 300;
+}
+.btn2{
+    height:50px;
+    color: white;
+    font-size:17px;
+    font-weight: 600;
+    border: 2px solid #68d80d;
+    background-color: #68d80d;
+    border-radius: 5px;
+    
+}
+.gallery h1{
+    font-weight: 800;
+}
+
+/* ----------------------- Equipments details ------------------------------ */
+
+.equip{
+    margin-top: -50px;
+}
+.equip h4{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.equip h1{
+    font-size: 2.5rem;
+    font-weight: 800;
+    
+}
+.equip p {
+    font-weight:300;
+}
+
+.back{
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: all 1s;
+    box-shadow: 4px 4px 4px #949495;
+}
+.back:hover{
+    color: white;
+    cursor: pointer;
+    transition: all 0.8s; 
+}
+
+.back::before{
+    content: "";
+    position: absolute;
+    height: 0px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background:linear-gradient(90deg ,#6ee085fc  0%, #68d80d 100%);
+    z-index: -1;
+    transition: all 0.9s;
+}
+.back:hover::before{
+    height: 100%;
+}
+/*------------------------------------ Gallery img ---------------------------------------------*/
+#gallery img{
+    transition: all 0.5s;
+}
+#gallery img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+/* ---------------------------- Contact Section ---------------------------------------- */
+#Contact {
+    padding: 50px;
+    text-align: center;
+    background-color: #68d80d;
+  }
+  #Contact h2{
+    display: flex;
+    text-align: center;
+    justify-content:center;
+    margin-bottom: 20px;
+    font-weight: 800;
+    
+  }
+  
+  #Contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 800;
+  }
+  
+  #Contact-form label {
+    margin-bottom: 10px;
+    font-weight: 800;
+  }
+  
+  #Contact-form input,
+  #Contact-form textarea {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    font-weight: 800;
+    border: 2px solid #68d80d;
+  }
+  
+  #Contact-form button {
+    background-color: #262924;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  
+/*-------------------------------Footer--------------------------------*/
+
+.footer{
+    background-color: #1a1741;
+    color: #fff;
+    margin-top: 10%;
+}
+.footer h4,h5{
+    font-weight: 900;
+}
+.footer h5{
+    font-weight: 900;
+}
+.footer p{
+    margin: 0;
+    color: teal;
+}
+.link {
+    cursor: pointer;
+    transition: all 0,5s;
+}
+.link:hover{
+    color: #68d80d;
+    padding-left: 5px;
+    transition: all 0.5s;
+}
+
+.fa-angle-double-right{
+    font-size: 18px;
+    color: teal;
+}
+.fa-angle-double-right:hover{
+    color: #68d80d;
+}
+.social_icon{
+    color: white;
+    font-size: 24px;
+    transition: all 0.4s;
+}
+.social_icon:hover{
+    color: #68d80d;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+/* .footer .card{
+    background: black;
+    border-radius: 0;
+    
+} */
